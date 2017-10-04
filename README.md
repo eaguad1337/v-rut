@@ -6,7 +6,7 @@ Formats Chilean DNI with dots and dash
 
 ## Installation
 
-`npm i --save eaguad1337/v-rut`
+`npm i --save v-rut`
 
 ## Configuration
 
