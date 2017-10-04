@@ -110,6 +110,7 @@ const vRutDirective = {
  * @return {string} The formatted Rut
  */
 function format(val) {
+  if (!val.length) return '';
   return clean(val).slice(0, -1).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + '-' + clean(val).slice(-1);
 }
 
