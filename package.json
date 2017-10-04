@@ -11,6 +11,14 @@
     "chilean",
     "validator"
   ],
+  "repository": {
+    "type": "git",
+    "url:": "git+https://github.com/eaguad1337/v-rut.git"
+  },
+  "bugs": {
+    "url:": "https://github.com/eaguad1337/issues"
+  },
+  "homepage": "https://github.com/eaguad1337/v-rut#readme",
   "author": "Eduardo Aguad <eduaguad@gmail.com>",
   "license": "ISC",
   "dependencies": {
