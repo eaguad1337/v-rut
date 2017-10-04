@@ -1,0 +1,24 @@
+{
+  "name": "v-rut",
+  "version": "1.0.0",
+  "main": "dist/v-rut.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rut",
+    "vue",
+    "chilean",
+    "validator"
+  ],
+  "author": "Eduardo Aguad <eduaguad@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "vue": "^2.4.4",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
