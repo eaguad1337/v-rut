@@ -65,44 +65,47 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vRutDirective__ = __webpack_require__(1);
 
+
+var _vRutDirective = __webpack_require__(1);
 
 exports.install = function (Vue) {
-	Vue.directive('rut', __WEBPACK_IMPORTED_MODULE_0__vRutDirective__["a" /* vRutDirective */]);
+	Vue.directive('rut', _vRutDirective.vRutDirective);
 };
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 /*
  * Formats Chilean DNI
  * @author Eduardo Aguad <eduaguad@gmail.com>
  *
  */
 
-const vRutDirective = {
+var vRutDirective = exports.vRutDirective = {
   data: {
     vModel: null
   },
-  bind(el, binding, vnode) {
+  bind: function bind(el, binding, vnode) {
     el.value = format(el.value);
     setVModelValue(format(el.value), vnode);
   },
-  update(el, binding, vnode) {
+  update: function update(el, binding, vnode) {
     if (el.value < 3) return false;
     el.value = format(el.value);
     setVModelValue(el.value, vnode);
   }
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = vRutDirective;
-
 
 /*
  * Format rut with dots and dash
